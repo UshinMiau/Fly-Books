@@ -11,4 +11,4 @@ English:
 This is a project of my own, created to be my final project in the module of Web Development II of the technical course of informatics for internet at Faculdade e Escola Técnica Qi.
 The project was developed in PHP, MySQL, JavaScript(JQuery), CSS and HTML. It also used the MVC software design pattern and the BEM methodology.
 The type of customer account can create the account alone when entering the site, filling in the registration form with correct data (which pass my validation of each field) and saving in the database in the client table. Permissions within the site for the customer are to edit their data, delete their account and register books.
-The user account type has to be created by another user. Your permissions are total, and they can register, edit and delete users (including editing and deleting your own profile), register and delete books and edit and delete customers.
+The user account type has to be created by another user. Your permissions are total, and they can register, edit and delete users (including editing and deleting your own profile), register and delete books and edit and delete customers. 
