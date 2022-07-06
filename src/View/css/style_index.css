@@ -1,0 +1,152 @@
+/* * SECTION OBJECTIVES-BANNER */
+
+section.objectives-banner {
+    padding: 40px 0;
+}
+
+.objectives-banner__slide {
+    display: flex!important;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.objectives-banner__slide-text {
+    padding-right: 2%;
+    width: 60%;
+}
+
+.objectives-banner__slide-text h2{
+    font-size: 35px;
+    color: var(--strong-blue-main);
+    margin-bottom: 8px;
+}
+
+.objectives-banner__slide-text p {
+    font-size: 18px;
+}
+
+.objectives-banner__slide-img {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40%;
+    padding-top: 30%;
+    max-height: 60vh;
+}
+
+.slick-dotted ul {
+	text-align: center;
+}
+
+.slick-dotted ul li {
+	display: inline-block;
+	margin: 0 4px;
+}
+
+.slick-dotted li button {
+	border-radius: 50%;
+	height: 18px;
+	width: 18px;
+	background-color: #cacaca;
+	color: #cacaca;
+	border: 0;
+	cursor: pointer;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+
+.slick-dotted li.slick-active button {
+	background-color: var(--strong-blue-main);
+	color: var(--strong-blue-main);
+}
+
+/* * SECTION CALL */
+
+section.call {
+    padding: 40px 0;
+    background-color: #ececec;
+}
+
+section.call > .container {
+    max-width: 800px;
+    text-align: center;
+}
+
+section.call h2 {
+    font-size: 35px;
+    margin-bottom: 8px;
+	color: var(--strong-blue-main);
+}
+
+/* * SECTION DIFFERENTIALS */
+
+section.differentials {
+    padding: 40px 0;
+    text-align: center;
+}
+
+section.differentials h2 {
+    font-size: 35px;
+    margin-bottom: 8px;
+	color: var(--strong-blue-main);
+}
+
+.differentials__container-itens {
+    display: flex;
+    justify-content: space-between;
+}
+
+.differentials__half {
+    padding: 20px 2% 0 2%;
+    max-width: 600px;
+}
+
+.differentials__half h3 i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+
+/* * MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+    /* * SECTION OBJECTIVES */
+
+    .slick-track {
+        display: flex;
+        align-items: center;
+    }
+
+    .objectives-banner__slide {
+        height: 100%;
+    }
+    
+    .objectives-banner__slide-text {
+        padding-right: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .objectives-banner__slide-img {
+        display: none;
+    }
+
+    .slick-dotted ul {
+        margin-top: 20px;
+    }
+
+    /* * SECTION DIFFERENTIALS */
+
+    .differentials__container-itens {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .differentials__half {
+        padding: 30px 0 0 0;
+        max-width: 600px;
+    }
+}

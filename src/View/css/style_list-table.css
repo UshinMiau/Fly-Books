@@ -1,0 +1,74 @@
+main.list {
+    background-color: #f7f7f7;
+}
+
+main.list > .container {
+    padding: 40px 4%;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+}
+
+section.list__section {
+    box-shadow: 0px 0px 15px 8px rgba(0,0,0,0.05);
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    padding: 20px 4%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.list__section h1 {
+    font-size: 30px;
+    color: var(--strong-blue-main);
+    text-align: center;
+}
+
+table {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table th {
+    color: var(--strong-blue-main);
+    font-size: 18px;
+    padding: 5px 0.5%;
+}
+
+table tbody td {
+    padding: 5px 0.5%;
+}
+
+table a.list__action {
+    padding: 4px;
+    color: #000;
+    font-size: 16px;
+    background-color: var(--weak-purple-main);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin: 2px;
+    display: inline-block;
+}
+
+@media screen and (max-width: 480px) {
+    table {
+        word-wrap: break-word;
+    }
+
+    table tbody td {
+        padding: 0px 0.5%;
+    }
+
+}

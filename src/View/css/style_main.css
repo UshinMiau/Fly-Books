@@ -1,0 +1,123 @@
+/* * PALETA DE CORES */
+
+:root {
+    --strong-blue-main: #201070;
+    --weak-purple-main: #CBC4EE;
+    --weak-blue-main: #D4EAFF;
+}
+
+/* * CLASSES REUTILIZÁVEIS */
+
+.container {
+    width: 100%;
+    padding: 0 4%;
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+/* * HEADER MENU */
+
+header.menu {
+    background-color: var(--weak-blue-main);
+}
+
+header.menu > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+article.menu__logo {
+    background-image: url(../img/logo.png);
+    background-size: cover;
+    width: 75px;
+    height: 75px;
+}
+
+nav.menu__menu-desktop {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu__mobile-navigation-icon {
+    display: none;
+    font-size: 30px;
+    color: var(--strong-blue-main);
+    cursor: pointer;
+}
+
+nav.menu__menu-desktop ul {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+nav.menu__menu-desktop li {
+    padding-left: 2%;
+}
+
+nav.menu__menu-desktop li a {
+    padding: 5px 3px;
+    display: flex;
+    align-items: center;
+}
+
+nav.menu__menu-desktop li a:hover {
+    border-bottom: 2.5px solid var(--strong-blue-main);
+    border-radius: 2.5px;
+    -webkit-border-radius: 2.5px;
+    -moz-border-radius: 2.5px;
+    -ms-border-radius: 2.5px;
+    -o-border-radius: 2.5px;
+}
+
+nav.menu__menu-desktop ul li i, nav.menu-mobile ul li i {
+    font-size: 19px;
+    padding-right: 2px;
+}
+
+nav.menu-mobile {
+    display: none;
+    width: 100%;
+    text-align: center;
+    background-color: #f7f7f7;
+    padding: 8px 0;
+}
+
+nav.menu-mobile a {
+    color: var(--strong-blue-main);
+    padding: 8px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* * FOOTER */
+
+footer.site-end {
+    padding: 20px 0;
+    background-color: var(--weak-blue-main);
+    text-align: center;
+    width: 100%;
+}
+
+/* * MEDIA QUERIES */
+
+@media screen and (min-width: 768px) {
+    nav.menu-mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu__mobile-navigation-icon {
+        display: flex;
+        align-items: center;
+    }
+    
+    nav.menu__menu-desktop ul {
+        display: none;
+    }
+}

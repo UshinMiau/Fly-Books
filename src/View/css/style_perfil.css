@@ -1,0 +1,97 @@
+main.perfil {
+    background-color: #f7f7f7;
+}
+
+main.perfil > .container {
+    padding: 40px 4%;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+}
+
+section.perfil__section {
+    box-shadow: 0px 0px 15px 8px rgba(0,0,0,0.05);
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    padding: 20px 4%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.perfil__section h1 {
+    font-size: 30px;
+    color: var(--strong-blue-main);
+    text-align: center;
+}
+
+article.perfil__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.perfil__icon {
+    font-size: 90px;
+    padding-right: 4%;
+}
+
+.perfil__container-data {
+    line-height: 25px;
+    font-size: 16px;
+}
+
+.perfil__edit {
+    margin-top: 20px;
+}
+
+.perfil__edit a, .perfil__adm-command a {
+    padding: 8px;
+    color: #fff;
+    background-color: var(--strong-blue-main);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.perfil__adm-command {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 2%;
+}
+
+.perfil__adm-command i {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+div.perfil__line {
+    margin: 30px 0;
+    border-top: dashed 3px var(--strong-blue-main);
+}
+
+@media screen and (max-width: 768px) {
+    article.perfil__container {
+        flex-direction: column;
+    }
+
+    .perfil__icon {
+        padding-right: 0;
+        margin-bottom: 10px;
+    }
+
+    section.perfil__adm article.perfil__container{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
